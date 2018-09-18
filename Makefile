@@ -3,9 +3,8 @@
 # This is old code, it isn't maintained anymore.
 #
 
-# fetch - for updating your version of FILTH
-fetch:
-	echo "insert git fetch here"
+# freshtest - for updating your version of FILTH
+freshtest: test clean
 
 # clean - for getting rid of bytecode prior to pushing
 clean:
