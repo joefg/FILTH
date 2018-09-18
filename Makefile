@@ -4,7 +4,11 @@
 #
 
 # freshtest - for updating your version of FILTH
-freshtest: test clean
+fresh: fetch test clean
+
+# fetch - for getting your fresh copy of FILTH
+fetch:
+	git pull
 
 # clean - for getting rid of bytecode prior to pushing
 clean:
@@ -19,4 +23,4 @@ test:
 	python3 -m unittest -v UnitTests/test_harness.py
 
 
-.PHONY: clean test
+.PHONY: fetch clean test
